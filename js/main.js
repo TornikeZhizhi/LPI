@@ -7,6 +7,8 @@ $(document).ready(function(){
 		$(this).click(function(e){
 			e.preventDefault()
 
+			$(".home_navbar a").removeClass("active")
+			$(this).addClass("active")
 
 			$(".home_navbar_info").removeClass("active");
 			$(".vert_tittle").removeClass("active");
