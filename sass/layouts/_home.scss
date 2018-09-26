@@ -227,7 +227,7 @@
 							    border-radius: 62px 58px 4px 4px;
 							    transition: .4s;
 
-
+								
 							    &.active {
 							    	border-bottom: 2.5px solid #D90000;
 							    }
@@ -259,6 +259,7 @@
 						    	bottom: 5%;
 						    	right: 5%;
 						    	z-index: 100;
+						    	cursor: pointer;
 						    }
 
 						    	&.active {
@@ -286,6 +287,16 @@
 				}
 		}
 
+}
+
+.navbar_pages {
+	transition:.4s;
+
+	 &.deactive {
+	 	visibility: hidden;
+	 	opacity: 0;
+
+	 }
 }
 
 
