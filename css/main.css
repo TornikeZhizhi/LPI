@@ -232,6 +232,93 @@ a:hover {
     opacity: 0; }
   100% {
     opacity: 1; } }
+#investors_fluid {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/investors_bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+#investors_down_fluid {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../images/team_bgg11.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.investors_container {
+  width: 70%; }
+
+.investors_table table {
+  transform: rotate(-32deg); }
+
+.investors_table table span {
+  transform: rotate(33deg);
+  display: block;
+  color: #000000;
+  font-size: 16px; }
+
+.investors_table table tr:last-child td:first-child {
+  border: none; }
+
+.investors_table table tr:first-child td:first-child {
+  border-left: none; }
+
+.investors_table table tr td:first-child {
+  border-right: 3px solid #000; }
+
+.investors_table table tr td:last-child {
+  border-left: 3px solid #000; }
+
+.investors_table table td {
+  /*padding: 86px 20px 52px 65px; */
+  width: 227px;
+  height: 142px;
+  text-align: center; }
+
+.line1 {
+  position: absolute;
+  height: 3px;
+  width: 110%;
+  background-color: #000;
+  top: 35%;
+  left: -24%; }
+
+.line2 {
+  position: absolute;
+  height: 3px;
+  width: 110%;
+  background-color: #000;
+  top: 50%;
+  left: -6%; }
+
+.line3 {
+  position: absolute;
+  height: 3px;
+  width: 110%;
+  background-color: #000;
+  top: 66%;
+  left: 11%; }
+
+.investors_table {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff; }
+
 #news_fluid {
   width: 100%;
   height: 100vh;
@@ -628,5 +715,106 @@ a:hover {
         font-size: 12px;
         font-family: 'Conv_CentraleSans-Medium';
         display: block; }
+
+#practice_area_fluid {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url("../images/areas_bg11.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; }
+
+.practice_area_contaiener {
+  width: 70%;
+  margin-left: 12%;
+  display: flex; }
+  .practice_area_contaiener .practice_area_content_box {
+    flex: 0 0 75%;
+    display: flex; }
+    .practice_area_contaiener .practice_area_content_box .text_shape {
+      width: 120px;
+      height: 100%;
+      float: left;
+      shape-outside: polygon(-1px 7px, 78px 317px, 63px 320px); }
+    .practice_area_contaiener .practice_area_content_box .practice_area_text {
+      background-color: #1E1F2B;
+      border-bottom: 5px solid #D90000;
+      padding: 50px 35px 35px 90px;
+      -webkit-clip-path: polygon(85% 0%, 100% 0, 100% 100%, 11% 100%, 0% 0);
+      clip-path: polygon(85% 0%, 100% 0, 100% 100%, 11% 100%, 0% 0);
+      max-height: 415px; }
+      .practice_area_contaiener .practice_area_content_box .practice_area_text:not(:first-child) {
+        display: none; }
+      .practice_area_contaiener .practice_area_content_box .practice_area_text p {
+        color: #fff;
+        font-size: 12px;
+        font-family: 'Conv_CentraleSans-Medium';
+        text-align: justify; }
+  .practice_area_contaiener .practice_area_list_box {
+    flex: 0 0 20%; }
+    .practice_area_contaiener .practice_area_list_box .practice_list_tittle {
+      margin-bottom: 20px; }
+      .practice_area_contaiener .practice_area_list_box .practice_list_tittle h3 {
+        color: #000;
+        font-size: 18px;
+        font-family: 'Conv_CentraleSans-Medium'; }
+    .practice_area_contaiener .practice_area_list_box ul {
+      padding-left: 19px; }
+      .practice_area_contaiener .practice_area_list_box ul li {
+        color: #515151;
+        font-size: 12px;
+        position: relative;
+        margin-bottom: 20px;
+        cursor: pointer; }
+        .practice_area_contaiener .practice_area_list_box ul li:after {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: -25px;
+          content: "";
+          background-image: url(../images/areas_list_icon11.png);
+          background-repeat: no-repeat;
+          background-position: center center;
+          width: 20px;
+          height: 20px; }
+
+#references_fluid {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../images/team_bgg11.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden; }
+
+.references_container {
+  width: 70%;
+  background-repeat: no-repeat;
+  background-image: url(../images/reference_box_bg11.png);
+  background-position: center center;
+  background-size: contain;
+  height: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .references_container .references_content_box {
+    width: 70%; }
+    .references_container .references_content_box .reference_text_box p {
+      font-size: 18px;
+      color: #000000;
+      font-family: 'Conv_CentraleSans-Medium'; }
+    .references_container .references_content_box .reference_text_box span {
+      color: #000000;
+      font-size: 16px; }
 
 /*# sourceMappingURL=main.css.map */

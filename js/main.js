@@ -74,4 +74,25 @@ $(document).ready(function(){
 	})
 
 
-})
+	$(".main_href").on("click",function(e){
+		e.preventDefault()
+
+	})
+
+
+	//Practice areas
+
+
+
+	$(".practice_area_list_box li").each(function(index){
+		$(this).click(function(){
+
+			$(".practice_area_text").css("display","none");
+			$(".practice_area_text").eq(index).fadeIn(900);
+
+
+		})
+	})
+
+
+	}) //ready function
