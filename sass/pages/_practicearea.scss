@@ -18,6 +18,25 @@
 			width: 70%;
    			margin-left: 12%;
    			display: flex;
+   			height: 100%;
+   			align-items: center;
+   			position: relative;
+
+   			&:after{
+   				    content: "";
+				    position: absolute;
+				    top: 0;
+				    left: 0;
+				    left: -17%;
+				    background-color: #fff;
+				    clip-path: polygon(0 0, 66% 0, 99% 100%, 0% 100%);
+				    width: 52%;
+				    height: 100%;
+   			}
+
+   			.practice_area_wrapper {
+   				display: flex;
+   			}
 
    		.practice_area_content_box {
 
@@ -58,9 +77,12 @@
 	  .practice_area_list_box {
 	  	    
 	  	    flex:0 0 20%;
+	  	    position: relative;
+    		z-index: 2000;
 	
 		.practice_list_tittle{
 			margin-bottom: 20px;
+
 
 				h3 {
 			  	 	color: #000;

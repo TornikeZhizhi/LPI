@@ -29,6 +29,7 @@ $('.team_slide').owlCarousel({
     loop:true,
     margin:70,
     smartSpeed: 700,
+    stagePadding: 30,
     nav:true,
     responsive:{
         0:{
@@ -43,6 +44,16 @@ $('.team_slide').owlCarousel({
     }
 })
 
+$('.reviews_slide').owlCarousel({
+    items:1,
+    loop:true,
+    dots: true,
+    touchDrag:  false,
+    mouseDrag: false,
+    smartSpeed: 700,
+    margin:10,
+    autoHeight:true
+});
 
 })
 
@@ -94,6 +105,91 @@ $(document).ready(function(){
 		})
 	})
 
+	
+	// investors down
+
+	$(".investors_prevent li a").click(function(h){
+		h.preventDefault()
+	})
+	$(".investros_content_box").eq(0).css("display","block")
+	$(".investors_nav li").each(function(index){
+		$(this).click(function(){
+			console.log(index)
+			$(".investros_content_box").css("display","none");
+			$(".investros_content_box").eq(index).fadeIn(900)
+		})
+	})
+
+
+
+// reviews owl carousel
+
+function removeOwl(){
+
+	$(".owl-dots button").removeClass("active10")
+	$(".owl-dots button").removeClass("active8")
+}
+
+$(".owl-dots button").eq(1).addClass("active8")
+$(".owl-dots button").eq(2).addClass("active10")
+
+$(".owl-dots button").eq(0).click(function(){
+
+	removeOwl()
+	$(".owl-dots button").eq(1).addClass("active8")
+	$(".owl-dots button").eq(2).addClass("active10")
+
+})
+
+$(".owl-dots button").eq(1).click(function(){
+	removeOwl()
+	$(".owl-dots button").eq(0).addClass("active8")
+	$(".owl-dots button").eq(2).addClass("active8")
+
+})
+
+$(".owl-dots button").eq(2).click(function(){
+	removeOwl()
+	$(".owl-dots button").eq(0).addClass("active10")
+	$(".owl-dots button").eq(1).addClass("active8")
+
+})
+
+
 
 	}) //ready function
 
+
+$( document ).ready(function() {
+
+   //  document.querySelector('.product_right').addEventListener('click',function(){
+ 		// document.querySelector('.owl-next').click()
+    
+   //  })
+   //  document.querySelector('.product_left').addEventListener('click',function(){
+ 		// document.querySelector('.owl-prev').click()
+   
+   //  })
+
+
+    document.getElementsByClassName('bullet')[0].addEventListener("click",function(){
+
+
+    	document.getElementsByClassName('owl-dot')[0].click()
+
+    })
+        
+})
+
+
+
+// slider office
+
+
+$(document).ready(function(){
+
+
+
+
+	
+})
