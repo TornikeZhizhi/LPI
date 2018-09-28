@@ -47,16 +47,14 @@
 				width: 120px;
 				height: 100%;
 				float: left;
-				shape-outside:polygon(-1px 7px, 78px 317px, 63px 320px);;
+				    shape-outside: polygon(17px 85px, 101px 457px, -21px -112px);
    			 }
 
 			
 				.practice_area_text{
 					background-color: #1E1F2B;
 					border-bottom: 5px solid #D90000;
-					padding: 50px 35px 35px 90px;
-					-webkit-clip-path: polygon(85% 0%, 100% 0, 100% 100%, 11% 100%, 0% 0);
-					clip-path: polygon(85% 0%, 100% 0, 100% 100%, 11% 100%, 0% 0);
+					padding: 50px 35px 35px 75px;
 					max-height: 415px;
 						
 						&:not(:first-child){
