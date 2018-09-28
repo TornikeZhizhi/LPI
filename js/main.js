@@ -122,64 +122,11 @@ $(document).ready(function(){
 
 
 
-// reviews owl carousel
 
-function removeOwl(){
-
-	$(".owl-dots button").removeClass("active10")
-	$(".owl-dots button").removeClass("active8")
-}
-
-$(".owl-dots button").eq(1).addClass("active8")
-$(".owl-dots button").eq(2).addClass("active10")
-
-$(".owl-dots button").eq(0).click(function(){
-
-	removeOwl()
-	$(".owl-dots button").eq(1).addClass("active8")
-	$(".owl-dots button").eq(2).addClass("active10")
-
-})
-
-$(".owl-dots button").eq(1).click(function(){
-	removeOwl()
-	$(".owl-dots button").eq(0).addClass("active8")
-	$(".owl-dots button").eq(2).addClass("active8")
-
-})
-
-$(".owl-dots button").eq(2).click(function(){
-	removeOwl()
-	$(".owl-dots button").eq(0).addClass("active10")
-	$(".owl-dots button").eq(1).addClass("active8")
-
-})
 
 
 
 	}) //ready function
-
-
-$( document ).ready(function() {
-
-   //  document.querySelector('.product_right').addEventListener('click',function(){
- 		// document.querySelector('.owl-next').click()
-    
-   //  })
-   //  document.querySelector('.product_left').addEventListener('click',function(){
- 		// document.querySelector('.owl-prev').click()
-   
-   //  })
-
-
-    document.getElementsByClassName('bullet')[0].addEventListener("click",function(){
-
-
-    	document.getElementsByClassName('owl-dot')[0].click()
-
-    })
-        
-})
 
 
 
@@ -189,7 +136,36 @@ $( document ).ready(function() {
 $(document).ready(function(){
 
 
+   $('.bullet:first-child').click(function(){
+           	 $('.owl-dot:first-child').click()
+            
+            })
+
+             $('.bullet:nth-child(2)').click(function(){
+            $('.owl-dot:nth-child(2)').click()
+            })
 
 
+               $('.bullet:last-child').click(function(){
+           $('.owl-dot:last-child').click()
+            })
+
+
+//slider 
+
+
+$(".bullet").eq(0).addClass("active");
+
+	$(".owl-dot").each(function(index){
+		$(this).click(function(){
+
+		$(".bullet").removeClass("active");
+
+		
+
+		$(".bullet").eq(index).addClass("active")	
 	
+		})
+	})	
+
 })

@@ -1055,21 +1055,21 @@ a:hover {
       width: 10px;
       height: 10px;
       border-radius: 50%;
-      margin-right: 5px;
+      margin-right: 8px;
       transition: .5s; }
       .reviews_contaiener .owl-dots button.active {
         /*width: 15px;
         height: 15px;*/
-        transform: scale(1.4);
+        transform: scale(1.5);
         background-color: #565656; }
       .reviews_contaiener .owl-dots button.active10 {
         background-color: #6F7073;
         transform: scale(1.3);
         /*width: 10px;
         height: 10px;*/ }
-      .reviews_contaiener .owl-dots button.active10 {
+      .reviews_contaiener .owl-dots button.active8 {
         background-color: #919191;
-        transform: scale(1.2);
+        transform: scale(1.5) !important;
         width: 7px;
         height: 7px; }
   .reviews_contaiener:after {
@@ -1139,13 +1139,31 @@ a:hover {
   top: 50%;
   right: -10%;
   transform: translateY(-50%);
-  display: flex; }
+  display: flex;
+  align-items: center;
+  justify-content: center; }
   .bullet_box .bullet {
-    width: 15px;
-    height: 15px;
-    background-color: #ccc;
-    margin-right: 10px;
-    border-radius: 50%; }
+    width: 10px;
+    height: 10px;
+    margin-right: 8px;
+    border-radius: 50%;
+    transition: .4s;
+    background-color: #565656; }
+    .bullet_box .bullet.active {
+      /*width: 15px;
+      height: 15px;*/
+      transform: scale(1.5);
+      background-color: #565656; }
+    .bullet_box .bullet.active10 {
+      background-color: #6F7073;
+      transform: scale(1.3);
+      /*width: 10px;
+      height: 10px;*/ }
+    .bullet_box .bullet.active8 {
+      background-color: #919191;
+      transform: scale(1.5) !important;
+      width: 7px;
+      height: 7px; }
 
 #office_fluid {
   width: 100%;
