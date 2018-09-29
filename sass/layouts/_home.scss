@@ -51,6 +51,9 @@
 						    	position: relative;
 						    	flex: 0 0 25%;
     							text-align: center;
+    							width: 100%;
+    							padding: 12px 20px;
+    							cursor:pointer;
 
 
 						    	&:hover .dropdown_nav{
@@ -127,18 +130,16 @@
 
 	 ul {
 
-	 	background-color: #fff;
 	 	flex-direction: column;
-	 	 margin-top: 50px;
+	 	 margin-top: 30px;
 	 	 padding: 20px 0;
 
 	 	 li {
 	 	 	 width: 80%;
    			 text-align: left !important;
+   			 background-color:#fff;
 
-	 	 	&:not(:last-child){
-	 	 	margin-bottom: 20px;
-	 	 	}
+	 	
 
 	 	 	 a {
 	 	 	 	font-size: 11px !important;
@@ -226,7 +227,7 @@
 							    text-align: center;
 							    padding: 5px 0px;
 							    border-radius: 62px 58px 4px 4px;
-							    transition: .4s;
+							    transition: border .2s, transform .4s, background-color .4s;
 
 								
 							    &.active {
@@ -246,7 +247,6 @@
 				
 				.home_navbar_info {
 						    max-width: 55vw;
-						   /* padding: 70px 100px;*/
 						    padding: 3.5vw 5vw;
 						    background-color: #fff;
 						    margin-left: 30px;
@@ -312,4 +312,123 @@
 	}
 }
 
+
+ .navigation .navbar_pr:hover  ul{
+  perspective: 1000px;
+}
+.navbar_pr:hover  ul li {
+  transform-origin: top center;
+  opacity: 0;
+}
+.navbar_pr:hover  ul li:nth-child(1) {
+  animation-name: menu-4;
+  animation-delay: 0ms;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+.navbar_pr:hover ul li:nth-child(2) {
+  animation-name: menu-4;
+  animation-delay: 50ms;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+.navbar_pr:hover  ul li:nth-child(3) {
+  animation-name: menu-4;
+  animation-delay: 100ms;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+.navbar_pr:hover  ul li:nth-child(4) {
+  animation-name: menu-4;
+  animation-delay: 150ms;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+.navbar_pr:hover  ul li:nth-child(5) {
+  animation-name: menu-4;
+  animation-delay: 200ms;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+.navbar_pr:hover  ul li:nth-child(6) {
+  animation-name: menu-4;
+  animation-delay: 250ms;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+.navbar_pr:hover  ul li:nth-child(7) {
+  animation-name: menu-4;
+  animation-delay: 300ms;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+.navbar_pr:hover  ul li:nth-child(8) {
+  animation-name: menu-4;
+  animation-delay: 350ms;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+.navbar_pr:hover  ul li:nth-child(9) {
+  animation-name: menu-4;
+  animation-delay: 400ms;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+.navbar_pr:hover  ul li:nth-child(10) {
+  animation-name: menu-4;
+  animation-delay: 450ms;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+.navbar_pr:hover  ul li:nth-child(11) {
+  animation-name: menu-4;
+  animation-delay: 500ms;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+.navbar_pr:hover  ul li:nth-child(12) {
+  animation-name: menu-4;
+  animation-delay: 550ms;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes menu-4 {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  70% {
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+
+//
+
+
+
+.home_navbar a:hover {
+     transform: scale(1.1) rotate(5deg);
+    box-shadow: 0rem 0rem 1rem 3px #ffffff7a;
+    background-color: #0000006e;
+    border-bottom:2.5px solid transparent !important;
+
+}
 

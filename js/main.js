@@ -94,16 +94,25 @@ $(document).ready(function(){
 	//Practice areas
 
 
+	$(".practice_area_text").eq(0).find("p").css("opacity","1")
 
 	$(".practice_area_list_box li").each(function(index){
 		$(this).click(function(){
-
 			$(".practice_area_text").css("display","none");
-			$(".practice_area_text").eq(index).fadeIn(900);
+			$(".practice_area_text").eq(index).slideDown()
+			setTimeout(function(){
+				$(".practice_area_text p").css("opacity","0")
+				$(".practice_area_text").eq(index).find("p").css("opacity","1")
+				console.log(index)
 
-
+			},350)
 		})
 	})
+
+
+
+
+
 
 	
 	// investors down
@@ -169,3 +178,36 @@ $(".bullet").eq(0).addClass("active");
 	})	
 
 })
+
+
+// investor table 
+
+$(".investors_container table a").each(function(index){
+
+	$(this).click(function(h){
+		// h.preventDefault()
+		console.log(index)
+
+		$(".investros_content_box").css("display","none");
+		$(".investros_content_box").eq(index).css("display","blocks");
+
+	})
+
+
+
+
+})
+
+      $(document).ready(function() {
+          var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+      });
+ 

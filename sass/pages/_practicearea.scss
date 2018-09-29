@@ -45,7 +45,7 @@
 
    			 .text_shape {
 				width: 120px;
-				height: 100%;
+				height: 120%;
 				float: left;
 				    shape-outside: polygon(17px 85px, 101px 457px, -21px -112px);
    			 }
@@ -67,6 +67,10 @@
 					 	font-size: 12px;
 					 	font-family: 'Conv_CentraleSans-Medium';
 					 	text-align: justify;
+					 	opacity:0;
+					 	transition:.8s;
+
+
 					 }
 				}
 
