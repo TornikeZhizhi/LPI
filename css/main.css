@@ -80,7 +80,7 @@ a:hover {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  z-index: 10; }
+  z-index: 15; }
   .header_fluid .navigation {
     flex: 0 0 45%;
     background-color: #fff; }
