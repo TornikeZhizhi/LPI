@@ -432,3 +432,20 @@
 
 }
 
+.language_box {
+
+	position:absolute;
+	z-index:10;
+	bottom:5%;
+	right:5%;
+
+	  span {
+	  	font-size:18px;
+	  	font-family: 'Conv_CentraleSans-Medium';
+	  	text-transform:uppercase;
+	  	color:#000;
+	  	cursor:pointer;
+
+	  }
+}
+

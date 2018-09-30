@@ -1,28 +1,5 @@
 //Home
 
-
-// $(document).ready(function(){
-
-// 	$(".home_navbar a").each(function(index){
-// 		$(this).click(function(e){
-// 			e.preventDefault()
-
-// 			$(".home_navbar a").removeClass("active")
-// 			$(this).addClass("active")
-
-// 			$(".home_navbar_info").removeClass("active");
-// 			$(".vert_tittle").removeClass("active");
-			
-// 			$(".home_navbar_info").eq(index).addClass("active");
-// 			$(".vert_tittle").eq(index).addClass("active");
-
-		
-			
-// 		})
-// 	})
-
-
-// })
 $(document).ready(function(){
 
 $('.team_slide').owlCarousel({
@@ -99,13 +76,13 @@ $(document).ready(function(){
 	$(".practice_area_list_box li").each(function(index){
 		$(this).click(function(){
 			$(".practice_area_text").css("display","none");
-			$(".practice_area_text").eq(index).slideDown()
+			$(".practice_area_text").eq(index).slideDown(600)
 			setTimeout(function(){
 				$(".practice_area_text p").css("opacity","0")
 				$(".practice_area_text").eq(index).find("p").css("opacity","1")
-				console.log(index)
+				
 
-			},350)
+			},50)
 		})
 	})
 
@@ -186,7 +163,6 @@ $(".investors_container table a").each(function(index){
 
 	$(this).click(function(h){
 		// h.preventDefault()
-		console.log(index)
 
 		$(".investros_content_box").css("display","none");
 		$(".investros_content_box").eq(index).css("display","blocks");
@@ -198,16 +174,16 @@ $(".investors_container table a").each(function(index){
 
 })
 
-      $(document).ready(function() {
-          var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-36251023-1']);
-  _gaq.push(['_setDomainName', 'jqueryscript.net']);
-  _gaq.push(['_trackPageview']);
+$(document).ready(function() {
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-36251023-1']);
+	  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+	  _gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-      });
+		(function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+});
  

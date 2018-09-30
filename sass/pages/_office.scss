@@ -30,9 +30,24 @@
 
 .office_container {
 	
-	 width: 70%{
+	 width: 70%;
 
-	 }
+    .office_tittle {
+      position:relative;
+      z-index: 2;
+      padding-left: 35%;
+      margin-bottom: 2%;
+
+        h2 {
+          color: #000;
+          font-size: 18px;
+          font-family: 'Conv_CentraleSans-Medium';
+          text-transform: uppercase;
+
+        }
+    }
+
+	 
 }
 
 .office_slider {
@@ -46,7 +61,7 @@
 		    position: absolute;
 		    top: 50%;
 		    transform: translate(-50%,-50%);
-			z-index: 1000;
+			   z-index: 2; 
 
 			   
 		}
@@ -149,6 +164,8 @@
   box-shadow: -12px 0px 20px 0px #d6d6d6;
 }
 
-
+.inactiveRight2 {
+  z-index: 50 !important;
+}
 
 .intro { color: #fff; }
