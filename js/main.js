@@ -16,8 +16,11 @@ $('.team_slide').owlCarousel({
             items:4
         },
         1000:{
+            items:4
+        },1366:{
             items:5
         }
+
     }
 })
 
