@@ -23,30 +23,6 @@
 
 
 
-	 .contact_fa_icons {
-		    position: absolute;
-    bottom: -20%;
-    left: 15%;
-    display: flex;
-    border-bottom: 2px solid red;
-    padding: 0px 7px 10px 120px;
-    z-index: 300;
-
-		    a {
-		    	border-radius: 50%;
-			    width: 40px;
-			    height: 40px;
-			    border: 2px solid #000;
-			    display: flex;
-			    align-items: center;
-			    justify-content: center;
-		    }
-
-		    a:not(:first-child) {
-    				margin-left: 10px;
-				}
-
-	 }
 
 
 	  .contact_wrapper {
@@ -162,4 +138,86 @@
 
 
 	  }
+}
+
+.contact_fa_icons {
+  	position: absolute;
+    bottom: 13%;
+    left: 30%;
+    display: flex;
+    border-bottom: 2px solid red;
+    padding: 0px 7px 10px 120px;
+    z-index: 300;
+
+    a {
+    	border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+     a:not(:first-child) {
+    				margin-left: 10px;
+				}
+}
+
+
+/*responsive */
+
+
+@media only screen and (max-width: 1500px){
+
+	.contact_main_container .contact_wrapper .contact_map {
+    flex: 0 0 70%;
+    padding-right: 25px;
+    position: relative;
+    z-index: 9;
+}
+
+.contact_main_container .contact_wrapper {
+   
+    padding: 20px;
+   
+}
+.contact_main_container {
+    width: 80%;
+    position: relative;
+    margin-bottom: 2%;
+}
+.contact_fa_icons {
+
+    left: 23%;
+  
+}
+
+
+}
+
+
+@media only screen and (max-width: 1376px) and (max-height: 750px) {
+
+	
+	.contact_map iframe {
+		height: 300px !important;
+	}
+
+	.contact_main_container .contact_wrapper .contact_form form textarea {
+    height: 154px;
+	}
+
+
+.contact_fa_icons {
+    bottom: 11%; 
+}
+
+.contact_main_container .contact_wrapper .contact_form form input {
+
+    padding: 12px 10px;
+   
+}
+
+
 }
