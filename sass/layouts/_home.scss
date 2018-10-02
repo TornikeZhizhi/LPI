@@ -655,8 +655,11 @@
 
 .home_main_container .home_navbar_content .home_navbar_info {
     max-width: 58vw;
-    padding: 1.5vw 3vw;
-    height: calc(100% - 200px);
+       padding: 3.5vw 3vw;
+  
+}
+.disclaimer_text {
+	    height: 270px;
     overflow-y: scroll;
 
     &::-webkit-scrollbar{
@@ -665,10 +668,14 @@
 }
 .home_main_container .home_navbar_content .home_navbar_info .home_navbar_info_button {
     position: absolute;
-    bottom: -13%;
+    bottom: 3%;
     right: 5%;
     z-index: 100;
     cursor: pointer;
+
+     img {
+     	width:35px;
+     }
 }
 .home_main_container .home_navbar_content .home_navbar_info.active {
     margin-top:5%;
@@ -701,11 +708,6 @@
 
 
 @media only screen and (max-height: 728px) and (max-width: 1366px){
-.home_main_container .home_navbar_content .home_navbar_info {
-   
-    height: calc(100% - 280px);
-    
-}
 
 }
 

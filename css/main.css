@@ -468,18 +468,22 @@ a:hover {
 @media only screen and (max-width: 1656px) and (max-height: 750px) {
   .home_main_container .home_navbar_content .home_navbar_info {
     max-width: 58vw;
-    padding: 1.5vw 3vw;
-    height: calc(100% - 200px);
+    padding: 3.5vw 3vw; }
+
+  .disclaimer_text {
+    height: 270px;
     overflow-y: scroll; }
-    .home_main_container .home_navbar_content .home_navbar_info::-webkit-scrollbar {
+    .disclaimer_text::-webkit-scrollbar {
       width: 0px; }
 
   .home_main_container .home_navbar_content .home_navbar_info .home_navbar_info_button {
     position: absolute;
-    bottom: -13%;
+    bottom: 3%;
     right: 5%;
     z-index: 100;
     cursor: pointer; }
+    .home_main_container .home_navbar_content .home_navbar_info .home_navbar_info_button img {
+      width: 35px; }
 
   .home_main_container .home_navbar_content .home_navbar_info.active {
     margin-top: 5%; } }
@@ -493,9 +497,6 @@ a:hover {
 @media only screen and (max-height: 750px) and (max-width: 1367px) {
   .practice_area_contaiener .practice_area_content_box .text_shape {
     shape-outside: polygon(-38px 282px, 149px 539px, 2px -48px); } }
-@media only screen and (max-height: 728px) and (max-width: 1366px) {
-  .home_main_container .home_navbar_content .home_navbar_info {
-    height: calc(100% - 280px); } }
 @media only screen and (max-width: 1220px) {
   .dropdown_nav ul li a {
     font-size: 9px !important; }
@@ -1179,7 +1180,10 @@ a:hover {
     margin-top: 20px; }
 
   .about_container {
-    margin-bottom: 0%; } }
+    margin-bottom: 0%; }
+
+  .about_container .about_info_box p {
+    font-size: 13px; } }
 #team_fluid {
   width: 100%;
   height: 100vh;
