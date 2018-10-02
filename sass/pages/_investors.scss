@@ -164,6 +164,7 @@
 .investor_down_container .investors_text_shape {
     width: 148px;
     height: 432px;
+    shape-outside: polygon(-1px -18px, 128px 517px, 34px 368px);
 
 }
 
@@ -171,20 +172,10 @@
     width: 65%;
    
 }
-.investor_down_container .investors_text_shape {
- 
-       shape-outside: polygon(-1px -18px, 128px 517px, 34px 368px);
-}
-
 
 }
 
-@media only screen and (max-width: 1620px){
-.investor_down_container .investors_text_shape {
-    shape-outside: polygon(-1px -18px, 108px 516px, 34px 368px);
-}
 
-}
 
 @media only screen and (max-width: 1500px){
 
@@ -275,8 +266,10 @@
 }
 
 .investor_down_container .investors_text_shape {
-    shape-outside: polygon(1px -7px, 108px 352px, -2px 353px);
+    shape-outside: polygon(1px -7px, 122px 352px, -2px 353px);
+    height: 338px;
 }
+
 .investor_down_container .investros_content_box {
    
     padding: 15px 50px 10px 4px;
@@ -286,10 +279,7 @@
     width: 80%;
 }
 
-.investor_down_container .investors_text_shape {
 
-    height: 338px;
-}
 
 
 }

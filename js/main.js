@@ -17,7 +17,7 @@ $('.team_slide').owlCarousel({
         },
         1000:{
             items:4
-        },1366:{
+        },1367:{
             items:5
         }
 

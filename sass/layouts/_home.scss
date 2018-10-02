@@ -693,18 +693,21 @@
 }
 
 @media only screen and (max-height: 750px) and (max-width: 1367px){
-.practice_area_contaiener .practice_area_content_box .practice_area_text {
-    
-     max-height: unset !important; 
-  
-}
+
 .practice_area_contaiener .practice_area_content_box .text_shape {
     shape-outside: polygon(-38px 282px, 149px 539px, 2px -48px);
 }
 }
 
 
+@media only screen and (max-height: 728px) and (max-width: 1366px){
+.home_main_container .home_navbar_content .home_navbar_info {
+   
+    height: calc(100% - 280px);
+    
+}
 
+}
 
 @media only screen and (max-width: 1220px){
 	.dropdown_nav ul li a {
