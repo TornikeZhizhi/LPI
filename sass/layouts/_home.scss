@@ -17,7 +17,7 @@
 	position: absolute;
 	bottom: 5%;
 	left: 5%;
-	z-index: 100;
+	    z-index: 15;
 }
 
 .header_fluid {
@@ -449,6 +449,147 @@
 }
 
 
+
+
+.responsive_navigation {
+
+
+		display: none;
+		position: fixed;
+		top: 5%;
+		right:5%;
+		 width: 35px;
+   		height: 25px;
+   		
+    	cursor: pointer;
+
+
+
+
+   		 .hamburger {
+				
+
+   		 	    width: 35px;
+    			height: 4px;
+			    background-color: #fff;
+			    border-radius: 10px;
+			    transition: .4s;
+
+
+			    &.ham1 {
+
+			    	position: absolute;
+			    	top: 0;
+
+			    	    &.active {
+			    	    	top: 50%;
+			    	    	transform: rotate(675deg);
+			    	    }
+
+
+			    }
+
+			    &.ham2 {
+			    	position: absolute;
+			    	top: 50%;
+			    	transform: translateY(-50%);
+			    	transition: .4s;
+
+			    		&.active {
+
+			    			opacity: 0;
+			    		}
+
+			    }
+
+			    &.ham3 {
+					
+					position: absolute;
+			    	bottom: 0%;
+
+			    	&.active {
+			    		top: 50%;
+			    		transform: rotate(-675deg);
+			    	}
+			    }
+
+
+
+   		 }
+
+
+
+		
+}
+
+
+
+.resp_nav_box {
+
+   		 	 background-color: rgba(0,0,0,.9);
+   		 	 position:fixed;
+   		 	 top: 0;
+   		 	 right: 0;
+   		 	 width: 0%;
+   		 	 height: 100%;
+   		 	 transition: .4s;
+   		 	 overflow: hidden;
+   		 	 z-index: 5000;
+   		 	 display: flex;
+		        align-items: flex-start;
+		    justify-content: center;
+
+
+   		 	 		&.active {
+   		 	 			width: 100%;
+   		 	 		}
+
+
+   		 }
+
+   .resp_navbar_container {
+
+   	  ._navigation {
+			
+			ul {
+				    display: flex;
+    flex-wrap: wrap;
+    max-width: 340px;
+    justify-content: space-between;
+
+
+				 .li_p {
+				 	flex: 0 0 50%;
+				    color: #fff;
+				    text-transform: uppercase;
+				    max-width: 158px;
+
+				 	a {
+				 		color: #fff;
+				 		text-transform: uppercase;
+				 	}
+				 }
+			}
+   	  }
+   }
+
+
+
+   ._dropdown_nav {
+   	display: none;
+
+   	  ul {
+   	  	display: flex;
+   	  	flex-direction: column;
+
+   	  	  a {
+   	  	  	font-size: 13px;
+   	  	  }
+   	  }
+   }		 
+
+
+
 /*Responsive*/
 
 
@@ -531,6 +672,10 @@
     padding: 1.5vw 3vw;
     height: calc(100% - 200px);
     overflow-y: scroll;
+
+    &::-webkit-scrollbar{
+    	width:0px;
+    }
 }
 .home_main_container .home_navbar_content .home_navbar_info .home_navbar_info_button {
     position: absolute;
@@ -565,5 +710,23 @@
 	.home_main_container .home_navbar ul li {
     margin-bottom: 30px;
 }
+
+}
+
+
+
+
+@media only screen and (max-width: 992px){
+
+	.navigation {
+		display: none;
+	}
+
+	.responsive_navigation {
+		display: flex;
+	}
+	
+
+	
 
 }

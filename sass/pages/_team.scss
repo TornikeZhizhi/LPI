@@ -523,18 +523,28 @@
 
 .team_info_container .team_info_img img {
     max-height: 268px;
+    margin-bottom: -6%;
 }
 
 .team_info_container .team_info_content .team_readmore {
     margin-top: 15px;
     overflow-y: scroll;
     height: 200px;
+
+
+    		&::-webkit-scrollbar {
+    			width:0px;
+    		}
 }
 .team_info_container .info_lines {
     position: absolute;
     top: 73%;
     left: 42%;
     transform: translate(-57%);
+}
+.team_info_container .team_info_content {
+    
+    clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 92%, 74% 100%, 0 95%, 0 0);
 }
 
 .team_info_button {

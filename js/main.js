@@ -190,3 +190,37 @@ $(document).ready(function() {
 		  })();
 });
  
+
+
+
+ // repsonsive navigattion
+
+
+
+ $(document).ready(function(){
+
+ 	$(".responsive_navigation").click(function(){
+
+ 		$(".resp_nav_box").toggleClass("active");
+
+ 		$(".ham1").toggleClass("active");
+ 		$(".ham2").toggleClass("active");
+ 		$(".ham3").toggleClass("active");
+
+
+ 	})
+
+
+
+ 	$(".li_p").each(function(index){
+ 		$(this).click(function(){
+
+ 			$(this).find("._dropdown_nav").slideToggle()
+
+
+ 		})
+ 	})
+
+
+ })
+
