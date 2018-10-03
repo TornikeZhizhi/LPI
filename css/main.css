@@ -412,6 +412,17 @@ a:hover {
   .resp_nav_box.active {
     width: 100%; }
 
+.resp_navbar_container ._navigation .li_r {
+  position: relative; }
+  .resp_navbar_container ._navigation .li_r:after {
+    position: absolute;
+    content: "";
+    top: 7px;
+    right: 5%;
+    width: 22px;
+    height: 10px;
+    background-image: url(../images/navigation_arrow11.png);
+    background-repeat: no-repeat; }
 .resp_navbar_container ._navigation ul {
   display: flex;
   flex-wrap: wrap;
@@ -488,7 +499,7 @@ a:hover {
 @media only screen and (max-width: 1656px) and (max-height: 750px) {
   .home_main_container .home_navbar_content .home_navbar_info {
     max-width: 58vw;
-    padding: 3.5vw 3vw; }
+    padding: 4.5vw 3vw; }
 
   .disclaimer_text {
     height: 270px;
@@ -756,11 +767,15 @@ a:hover {
       text-align: justify; }
 
 /*Responsive*/
-@media only screen and (max-width: 1620px) {
+@media only screen and (max-width: 1680px) {
   .investor_down_container .investors_text_shape {
     width: 148px;
-    height: 432px;
-    shape-outside: polygon(-1px -18px, 128px 517px, 34px 368px); }
+    height: 400px;
+    float: left;
+    shape-outside: polygon(-9px -19px, 121px 516px, 34px 368px); }
+
+  .investor_down_container .investros_content_box {
+    height: 450px; }
 
   .investor_down_container {
     width: 65%; } }
@@ -836,6 +851,10 @@ a:hover {
 
   .investor_down_container .investros_content_box {
     padding: 15px 30px 10px 4px; } }
+@media only screen and (max-height: 800px) and (max-width: 1376px) {
+  .investor_down_container .investors_text_shape {
+    shape-outside: polygon(1px -7px, 140px 388px, 1px 389px);
+    height: 382px; } }
 @media only screen and (max-width: 1200px) and (max-height: 780px) {
   .investor_down_container .investors_text_shape {
     shape-outside: polygon(1px -7px, 90px 352px, -2px 353px); } }
@@ -1915,6 +1934,9 @@ a:hover {
     background-image: url("../images/reference_slide_left11.png"); }
 
 /*responsive*/
+@media only screen and (max-width: 1870px) {
+  .owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+    width: 138%; } }
 @media only screen and (max-width: 1500px) {
   .references_container .references_content_box .reference_text_box p {
     font-size: 16px; }
@@ -1923,7 +1945,10 @@ a:hover {
     font-size: 14px; } }
 @media only screen and (max-width: 1376px) {
   .references_container .references_content_box .reference_text_box p {
-    font-size: 14px; } }
+    font-size: 14px; }
+
+  .owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+    width: 145%; } }
 @media only screen and (max-width: 1024px) {
   .references_container .references_content_box .reference_text_box p {
     font-size: 13px; } }

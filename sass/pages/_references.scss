@@ -102,6 +102,14 @@
 
 /*responsive*/
 
+@media only screen and (max-width: 1870px){
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+
+    width: 138%;
+   
+}
+}
+
 @media only screen and (max-width: 1500px) {
 	
 	.references_container .references_content_box .reference_text_box p {
@@ -122,6 +130,10 @@
 	.references_container .references_content_box .reference_text_box p {
     font-size: 14px;
 }
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+    width: 145%; 
+}
+
 }
 
 

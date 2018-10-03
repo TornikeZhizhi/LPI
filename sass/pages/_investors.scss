@@ -160,12 +160,17 @@
 
 /*Responsive*/
 
-@media only screen and (max-width: 1620px){
+@media only screen and (max-width: 1680px){
 .investor_down_container .investors_text_shape {
     width: 148px;
-    height: 432px;
-    shape-outside: polygon(-1px -18px, 128px 517px, 34px 368px);
+    height: 400px;
+    float: left;
+    shape-outside: polygon(-9px -19px, 121px 516px, 34px 368px);
+}
 
+.investor_down_container .investros_content_box {
+
+    height: 450px;
 }
 
 .investor_down_container {
@@ -307,6 +312,15 @@
 }
 
 }
+@media only screen and (max-height: 800px) and (max-width: 1376px){
+
+.investor_down_container .investors_text_shape {
+    shape-outside: polygon(1px -7px, 140px 388px, 1px 389px);
+    height: 382px;
+}
+
+}
+
 
 
 @media only screen and (max-width: 1200px) and (max-height: 780px)  {

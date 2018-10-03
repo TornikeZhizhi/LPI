@@ -551,6 +551,25 @@
    .resp_navbar_container {
 
    	  ._navigation {
+
+
+
+   	  	.li_r {
+   	  		position: relative;
+
+   	  		&:after{
+   	  			position: absolute;
+			    content: "";
+			    top: 7px;
+   				 right: 5%;
+			    width: 22px;
+			    height: 10px;
+			    background-image: url(../images/navigation_arrow11.png);
+			    background-repeat: no-repeat;
+   	  		}
+   	  		
+   		
+   	  	}
 			
 			ul {
 				    display: flex;
@@ -683,7 +702,7 @@
 
 .home_main_container .home_navbar_content .home_navbar_info {
     max-width: 58vw;
-       padding: 3.5vw 3vw;
+           padding: 4.5vw 3vw;
   
 }
 .disclaimer_text {
