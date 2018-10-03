@@ -35,6 +35,22 @@ $('.reviews_slide').owlCarousel({
     autoHeight:true
 });
 
+
+$('.references_content_box').owlCarousel({
+    loop:true,
+    margin:50,
+    smartSpeed: 700,
+    stagePadding: 30,
+    responsive:{
+        0:{
+            items:1
+        }
+       
+
+    }
+})
+
+
 })
 
 
@@ -199,6 +215,8 @@ $(document).ready(function() {
 
  $(document).ready(function(){
 
+ 	$("._navigation").fadeOut()
+
  	$(".responsive_navigation").click(function(){
 
  		$(".resp_nav_box").toggleClass("active");
@@ -206,6 +224,8 @@ $(document).ready(function() {
  		$(".ham1").toggleClass("active");
  		$(".ham2").toggleClass("active");
  		$(".ham3").toggleClass("active");
+
+ 		$("._navigation").fadeToggle(100)
 
 
  	})
@@ -222,7 +242,33 @@ $(document).ready(function() {
  	})
 
 
+
+// home page
+
+
+	$(window).on("load",function(){
+
+	if ($(window).width() <= 992) {
+			$(".disclaimer").click(function(){
+				
+				$(".home_navbar").css("display","none")	
+				$(".home_vertical_tittle").css("display","none")	
+
+			})
+
+
+			$(".home_navbar_info_button").click(function(){
+
+				$(".home_navbar").css("display","flex")
+
+			})
+		}
+	})
+
  })
+
+
+
 
 
 

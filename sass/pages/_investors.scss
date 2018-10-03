@@ -280,8 +280,18 @@
 }
 
 
+}
 
+@media only screen and (max-width: 1366px){
+	.investors_table {
+    width: 40%;
+}
+}
 
+@media only screen and (max-width: 1366px) and (max-height: 800px){
+	.investors_table {
+    width: 55%;
+}
 }
 
 @media only screen and (max-width: 1200px) {
