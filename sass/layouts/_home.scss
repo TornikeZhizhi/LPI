@@ -99,7 +99,7 @@
 									    top: 16px;
 									    left: 0;
 									    width: 50%;
-									    height: 4px;
+									    height: 3px;
 									    background-color: #D90000;
 									    transition: .4s;
 									    opacity: 0;
@@ -224,17 +224,17 @@
 							    font-size: 22px;
 							    font-family: 'Conv_CentraleSans-Medium';
 							    text-transform: capitalize;
-							    border-bottom: 2.5px solid #fff;
+							    border-bottom: 2px solid #fff;
 							    width: 225px;
 							    display: inline-block;
 							    text-align: center;
 							    padding: 5px 0px;
 							    border-radius: 62px 58px 4px 4px;
-							    transition: .4s;
+							    transition: .1s;
 
 								
 							    &.active {
-							    	border-bottom: 2.5px solid #D90000;
+							    	border-bottom: 2px solid #D90000;
 							    }
       		   	    	}
       		   	    }
@@ -429,7 +429,7 @@
 
 .home_navbar a:hover {
    
-    border-bottom:2.5px solid #D90000 !important;
+    border-bottom:2px solid #D90000 !important;
 
 }
 

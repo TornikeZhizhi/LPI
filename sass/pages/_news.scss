@@ -59,14 +59,26 @@
 
 
 			 .news_wrapper {
-					
+					padding-right: 8px;
 					overflow-y: scroll;
     				height: calc(120px *3 + 72px);
-    				    max-width: 42%;
+    				max-width: 42%;
 
 			 	&::-webkit-scrollbar{
-			 		width:1px;
+			 		width:3px;
 			 	}
+
+			 	
+					&::-webkit-scrollbar-track {
+					    box-shadow: inset 0 0 5px grey; 
+					    border-radius: 10px;
+					}
+ 
+
+					&::-webkit-scrollbar-thumb {
+					    background: #fff; 
+					    border-radius: 10px;
+					}
 					
 
 					.news_box {

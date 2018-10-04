@@ -121,7 +121,7 @@ a:hover {
           top: 16px;
           left: 0;
           width: 50%;
-          height: 4px;
+          height: 3px;
           background-color: #D90000;
           transition: .4s;
           opacity: 0; }
@@ -194,15 +194,15 @@ a:hover {
         font-size: 22px;
         font-family: 'Conv_CentraleSans-Medium';
         text-transform: capitalize;
-        border-bottom: 2.5px solid #fff;
+        border-bottom: 2px solid #fff;
         width: 225px;
         display: inline-block;
         text-align: center;
         padding: 5px 0px;
         border-radius: 62px 58px 4px 4px;
-        transition: .4s; }
+        transition: .1s; }
         .home_main_container .home_navbar ul li a.active {
-          border-bottom: 2.5px solid #D90000; }
+          border-bottom: 2px solid #D90000; }
   .home_main_container .home_navbar_content {
     display: flex;
     align-items: center;
@@ -348,7 +348,7 @@ a:hover {
     opacity: 1;
     transform: translateX(0px); } }
 .home_navbar a:hover {
-  border-bottom: 2.5px solid #D90000 !important; }
+  border-bottom: 2px solid #D90000 !important; }
 
 .language_box {
   position: absolute;
@@ -1066,11 +1066,18 @@ a:hover {
     margin-top: 3.7vw;
     position: relative; }
     .news_container .news_row .news_wrapper {
+      padding-right: 8px;
       overflow-y: scroll;
       height: calc(120px *3 + 72px);
       max-width: 42%; }
       .news_container .news_row .news_wrapper::-webkit-scrollbar {
-        width: 1px; }
+        width: 3px; }
+      .news_container .news_row .news_wrapper::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 10px; }
+      .news_container .news_row .news_wrapper::-webkit-scrollbar-thumb {
+        background: #fff;
+        border-radius: 10px; }
       .news_container .news_row .news_wrapper .news_box {
         background-color: #fff;
         flex-direction: column;
@@ -1921,7 +1928,10 @@ a:hover {
       .practice_area_contaiener .practice_area_list_box .practice_list_tittle h3 {
         color: #000;
         font-size: 18px;
-        font-family: 'Conv_CentraleSans-Medium'; }
+        font-family: 'Conv_CentraleSans-Medium';
+        border-bottom: 2px solid #D90000;
+        padding: 3px 20px;
+        display: inline-block; }
     .practice_area_contaiener .practice_area_list_box ul {
       padding-left: 19px; }
       .practice_area_contaiener .practice_area_list_box ul li {
