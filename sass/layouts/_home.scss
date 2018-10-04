@@ -214,6 +214,10 @@
       		 align-items: center;
       		  margin-left: 15%;
 
+      		  &.active {
+      		  	display:none;
+      		  }
+
       		   ul {
 
       		   	    li {

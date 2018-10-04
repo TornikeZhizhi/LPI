@@ -187,6 +187,8 @@ a:hover {
     display: flex;
     align-items: center;
     margin-left: 15%; }
+    .home_main_container .home_navbar.active {
+      display: none; }
     .home_main_container .home_navbar ul li {
       margin-bottom: 50px; }
       .home_main_container .home_navbar ul li a {
