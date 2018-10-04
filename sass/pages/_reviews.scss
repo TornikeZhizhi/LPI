@@ -276,6 +276,50 @@
 
 }
 
+ .reviews_contaiener {
+
+ .owl-carousel button.owl-dot {
+    display: none;}
+
+
+    .bullet_box {
+    	display: none;
+    }
+
+
+    .owl-carousel .owl-nav button {
+	outline: none;
+	 width: 80px;
+    height: 80px;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: contain !important;
+	background-image: url("../images");
+
+	span {
+		display: none;
+	}
+
+
+		&.owl-next{
+			
+			background-image: url("../images/reference_slide_right11.png");
+		}
+
+		&.owl-prev{
+			background-image: url("../images/reference_slide_left11.png");
+		}
+
+}
+
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+    
+    width: 118%;
+   
+}
+
+ }
+
 
 
 /*// responsive*/

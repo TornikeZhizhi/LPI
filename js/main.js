@@ -10,12 +10,15 @@ $('.team_slide').owlCarousel({
     nav:true,
     responsive:{
         0:{
+            items:1
+        },
+        551:{
             items:2
         },
-        600:{
-            items:4
+        768:{
+            items:3
         },
-        1000:{
+        993:{
             items:4
         },1367:{
             items:5
@@ -28,8 +31,8 @@ $('.reviews_slide').owlCarousel({
     items:1,
     loop:true,
     dots: true,
-    touchDrag:  false,
-    mouseDrag: false,
+    touchDrag:  true,
+    mouseDrag: true,
     smartSpeed: 700,
     margin:10,
     autoHeight:true
@@ -57,6 +60,12 @@ $('.references_content_box').owlCarousel({
 
 
 $(document).ready(function(){
+
+
+	$(".news_tittle").click(function(){
+
+		window.location.href = "index.html";
+	})
 
 
 	$(".home_navbar .disclaimer").on("click",function(e){
@@ -224,6 +233,9 @@ $(document).ready(function() {
  		$(".ham1").toggleClass("active");
  		$(".ham2").toggleClass("active");
  		$(".ham3").toggleClass("active");
+
+
+ 		$(".hamb_for_about").toggleClass("active2");
 
  		$("._navigation").fadeToggle(100)
 

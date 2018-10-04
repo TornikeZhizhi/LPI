@@ -70,7 +70,10 @@
 		
 	}
 }
-.owl-carousel .owl-nav button {
+
+
+.references_container {
+	.owl-carousel .owl-nav button {
 	outline: none;
 	 width: 80px;
     height: 80px;
@@ -92,6 +95,8 @@
 		&.owl-prev{
 			background-image: url("../images/reference_slide_left11.png");
 		}
+
+}
 
 }
 

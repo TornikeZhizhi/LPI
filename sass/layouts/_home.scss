@@ -556,6 +556,7 @@
 
    	  	.li_r {
    	  		position: relative;
+   	  		cursor: pointer;
 
    	  		&:after{
    	  			position: absolute;
@@ -564,7 +565,7 @@
    				 right: 5%;
 			    width: 22px;
 			    height: 10px;
-			    background-image: url(../images/navigation_arrow11.png);
+			    background-image: url(../images/resp_menu_down11.png);
 			    background-repeat: no-repeat;
    	  		}
    	  		

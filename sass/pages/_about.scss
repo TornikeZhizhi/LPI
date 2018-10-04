@@ -118,6 +118,16 @@
 		}
 
 }      
+.resp_for_about {
+	background-color: unset;
+}
+.hamb_for_about {
+	background-color: #000000 !important;
+
+		&.active2 {
+			background-color: #fff !important;
+		}
+}
 
 
 
@@ -168,6 +178,54 @@
 }
 .about_container .about_info_box p {
     font-size: 13px;
+}
+
+}
+
+
+
+@media only screen and (max-width: 992px){
+
+.about_vertical_tittle{
+	display: none;
+}
+
+.about_container {
+     width: 100%; 
+    margin: 0 5%;
+}
+.about_fa_icons {
+    position: absolute;
+    bottom: 13%;
+    left: unset;
+    right: 0%;
+    display: flex;
+    border-bottom: 2px solid red;
+    padding: 0px 90px 10px 00px;
+}
+
+
+}
+
+
+
+@media only screen and (max-width: 576px){
+
+.about_info_box {
+	    overflow-y: scroll;
+    height: 210px;
+
+
+    &::-webkit-scrollbar {
+   		 width: 0px;
+	}
+
+}
+
+#about_fluid {
+ 
+    background-position: left;
+   
 }
 
 }
