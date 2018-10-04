@@ -39,6 +39,7 @@
 	 	 	   	font-size: 18px;
 	 	 	   	color: #000000;
 	 	 	   	font-family: 'Conv_CentraleSans-Medium';
+	 	 	   	text-align: justify;
 	 	 	   }
 
 	 	 	   span {
@@ -47,6 +48,10 @@
 	 	 	   		font-size: 16px;	
 	 	 	   }
 	 	 }
+	 }
+
+	 .owl-dots {
+	 	display: none;
 	 }
 }
 
@@ -61,6 +66,8 @@
     width: 130%;
     z-index: -1;
 }
+
+
 
 .references_content_box {
 
@@ -153,3 +160,62 @@
 
 
 
+@media only screen and (max-width: 992px) {
+	
+	.references_container {
+
+    background-image: url(../images/reference_sl_line11.png);
+        background-size: 90% 70%;
+        width: 80%;
+        height: 55%;
+   
+}
+
+}
+
+
+@media only screen and (max-width: 768px) {
+	
+.reference_text_box {
+	overflow-y: scroll;
+	height: 200px;
+	    line-height: 15px;
+
+	  &::-webkit-scrollbar {
+    		width: 0px;
+		}
+}
+
+.references_container .references_content_box .reference_text_box p {
+    font-size: 11px;
+}
+
+.references_container .owl-carousel .owl-nav button {
+    width: 55px;
+    height: 54px;
+   
+}
+.references_container {
+
+    width: 100%;
+   
+}
+
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+    width: 120%;
+}
+
+.references_container .references_content_box .reference_text_box span {
+    font-size: 10px;
+ 
+}
+
+}
+
+
+@media only screen and (max-width: 425px) {
+
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+    width: 130%;
+}	
+}

@@ -101,22 +101,44 @@ $(document).ready(function(){
 
 	$(".practice_area_text").eq(0).find("p").css("opacity","1")
 
-	$(".practice_area_list_box li").each(function(index){
-		$(this).click(function(){
-			$(".practice_area_text").css("display","none");
-			$(".practice_area_text").eq(index).slideDown(600)
-			setTimeout(function(){
-				$(".practice_area_text p").css("opacity","0")
-				$(".practice_area_text").eq(index).find("p").css("opacity","1")
-				
+	$(window).on("load",function(){
 
-			},50)
-		})
+		if($(window).width() > 992) {
+
+			$(".practice_area_list_box li").each(function(index){
+				$(this).click(function(){
+					$(".practice_area_text").css("display","none");
+					$(".practice_area_text").eq(index).slideDown(600)
+					setTimeout(function(){
+						$(".practice_area_text p").css("opacity","0")
+						$(".practice_area_text").eq(index).find("p").css("opacity","1")
+						
+
+					},50)
+				})
+			})
+
+		}else if ($(window).width() <= 992){
+
+			$(".practice_area_list_box li").each(function(index){
+				$(this).click(function(){
+					$(".practice_area_text").css("display","none");
+					$(".practice_area_text").eq(index).fadeIn(600)
+					setTimeout(function(){
+						$(".practice_area_text p").css("opacity","0")
+						$(".practice_area_text").eq(index).find("p").css("opacity","1")
+						
+
+					},50)
+				})
+			})
+
+		}
+
 	})
 
 
-
-
+//Practice areas end
 
 
 	

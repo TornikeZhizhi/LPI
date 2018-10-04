@@ -474,7 +474,7 @@
     			height: 4px;
 			    background-color: #fff;
 			    border-radius: 10px;
-			    transition: .4s;
+			    transition: .6s;
 
 
 			    &.ham1 {
@@ -484,7 +484,7 @@
 
 			    	    &.active {
 			    	    	top: 50%;
-			    	    	transform: rotate(675deg);
+			    	    	transform: rotate(315deg);
 			    	    }
 
 
@@ -494,7 +494,7 @@
 			    	position: absolute;
 			    	top: 50%;
 			    	transform: translateY(-50%);
-			    	transition: .4s;
+			    	transition: .6s;
 
 			    		&.active {
 
@@ -510,7 +510,7 @@
 
 			    	&.active {
 			    		top: 50%;
-			    		transform: rotate(-675deg);
+			    		transform: rotate(-315deg);
 			    	}
 			    }
 
@@ -784,7 +784,11 @@
 
 
 @media only screen and (max-width: 992px){
+	
+	.home_vertical_tittle {
 
+		display: none;
+	}
 	.home_main_container .home_navbar_content {
 	    margin-top: 10%;
 	}
