@@ -52,8 +52,8 @@
 
 			
 				.practice_area_text{
-					background-color: #1E1F2B;
-					border-bottom: 5px solid #D90000;
+					/*background-color: #1E1F2B;*/
+					border-bottom:2px solid #D90000;
 					padding: 50px 35px 35px 75px;
 					max-height: 415px;
 						
@@ -63,9 +63,9 @@
 
 					 p {
 
-					 	color: #fff;
-					 	font-size: 12.5px;
-					 	font-family: 'Conv_CentraleSans-Medium';
+					 	    color: #000;
+					 	    font-size: 13px;
+					 	font-family: 'Conv_Centrale Sans Extra Light';
 					 	text-align: justify;
 					 	opacity:0;
 					 	transition:.8s;
@@ -129,6 +129,11 @@
 
 }
 
+.area_language {
+	 span {
+	 	color: #000;
+	 }
+}
 
 
 

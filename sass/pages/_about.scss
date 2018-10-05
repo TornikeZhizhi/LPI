@@ -87,6 +87,7 @@
 		    width: 35%;
    			 margin-left: 7%;
    			 margin-bottom: 5%;
+   			 position: relative;
 
 		.about_tittle{
 
@@ -95,10 +96,11 @@
 			    font-family: 'Conv_CentraleSans-Medium';
 			    color: #000;
 			    text-transform: capitalize;
-			    border-bottom: 2.5px solid #D90000;
+			    border-bottom: 2px solid #D90000;
 			    padding: 5px 40px;
 			    display: inline-block;
 			    padding: 0px 15px 5px 0px;
+			    cursor:pointer;
 			 }
 		}
 

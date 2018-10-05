@@ -17,7 +17,19 @@
 	position: absolute;
 	bottom: 5%;
 	left: 5%;
-	    z-index: 15;
+	z-index: 15;
+	display: flex;
+    align-items: center;
+    width: 150px;
+    justify-content: space-between;
+
+    .main_back_arrow_box {
+    	cursor: pointer;
+    }
+
+    .main_front_arrow_box {
+    	cursor: pointer;
+    }
 }
 
 .header_fluid {
@@ -99,7 +111,7 @@
 									    top: 16px;
 									    left: 0;
 									    width: 50%;
-									    height: 3px;
+									    height: 2px;
 									    background-color: #D90000;
 									    transition: .4s;
 									    opacity: 0;
@@ -213,7 +225,7 @@
       		 display: flex;
       		 align-items: center;
       		  margin-left: 15%;
-
+      		      position: relative;
       		  &.active {
       		  	display:none;
       		  }
@@ -929,6 +941,11 @@
     width: 110px;
 }
 
+.home_main_container .home_navbar_content .home_navbar_info.active {
+  
+  
+    padding: 15px 20px 20px 20px;
+}
 
 
 }

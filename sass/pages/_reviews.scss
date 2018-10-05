@@ -48,7 +48,7 @@
     	 	  h2 {
     	 	  	color: #000;
     	 	  	font-size: 16px;
-    	 	  	font-family: 'Conv_CentraleSans-Medium';
+    	 	  	font-family: 'Conv_Centrale Sans Extra Light';
     	 	  	position: relative;
     	 	  	display: inline-block;
 
@@ -58,7 +58,7 @@
     	 	  			top: 20px;
     	 	  			left: 0;
     	 	  			width: 58px;
-    	 	  			height: 3px;
+    	 	  			height:2px;
     	 	  			background-color: #D90000;
     	 	  			position: absolute;
     	 	  		}
@@ -168,7 +168,7 @@
 				 height: 355px;
 				 margin:0 auto;
 				 background-color: #fff;
-				 border-bottom: 5px solid #D90000;
+			     border-bottom: 2px solid #D90000;
 				 position: relative;
     			z-index: 1;
 			}
@@ -346,11 +346,7 @@
     padding: 35px 20px 0px 20px;
 }
 
-.main_fluid_bot_arrow {
-	 img {
-	 	width: 100px;
-	 }
-}
+
 .reviews_contaiener .owl-carousel .owl-dots.disabled, .reviews_contaiener .owl-carousel .owl-nav.disabled {
     width: 125%;
 }

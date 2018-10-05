@@ -132,7 +132,7 @@
 	 .investros_content_box {
 			
 		display: none;	
-	 	border-bottom: 5px solid #D90000;
+	 	    border-bottom: 2px solid #D90000;
 	 	 padding: 15px 100px 10px 4px;
 	 	 margin-right: 4%;
 
@@ -365,6 +365,52 @@
 .investor_down_container .investors_text_shape {
     shape-outside: polygon(1px -7px, 106px 357px, 2px 434px);
 }
+
+}
+
+
+
+
+@media only screen and (max-width: 992px) {
+
+.investors_white_shape {
+	display: none;
+}
+
+#investors_down_fluid {
+   
+    background-image: url(../images/mobile_inv_bg.jpg);
+  
+
+}
+
+.investors_text_shape {
+	display: none;
+}
+
+.investor_down_container {
+    width: 100%;
+
+}
+.investor_down_container .investros_content_box {
+   
+   margin: 0 auto;
+    padding: 15px 20px 10px 20px;
+    height: unset;
+    height: 400px;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar{
+    	width: 0px;
+    }
+
+}
+
+.inv_text_wrap {
+     width: unset; 
+}
+
+
 
 }
 

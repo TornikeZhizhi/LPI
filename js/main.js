@@ -6,7 +6,7 @@ $('.team_slide').owlCarousel({
     loop:true,
     margin:70,
     smartSpeed: 700,
-    stagePadding: 30,
+    stagePadding: 10,
     nav:true,
     responsive:{
         0:{
@@ -66,6 +66,16 @@ $(document).ready(function(){
 		window.location.href = "index.html";
 	})
 
+	$(".about_tittle h2").click(function(){
+		window.location.href = "index.html";
+	})
+
+
+	$(".main_front_arrow_box").click(function(){
+		
+		window.history.back();
+	})
+
 // disclaimer
 var desay = 0;
 	$(".home_navbar .disclaimer").on("click",function(e){
@@ -79,7 +89,7 @@ var desay = 0;
 
 		setTimeout(function(){
 			desay = 1;
-		},100)
+		},1)
 		
 	})
 
