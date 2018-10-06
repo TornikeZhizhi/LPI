@@ -39,7 +39,7 @@
            transform: rotate(-32deg);
 	}
 	.investors_table table span {
-           transform: rotate(33deg);
+           transform: rotate(32deg);
            display: block;
            color: #000000;
            font-size: 16px;
@@ -149,7 +149,7 @@
 
 	 	 	 p{
 	 	 	 	color: #1E1F2B;
-	 	 	 	font-family: 'Conv_CentraleSans-Medium';
+	 	 	 	font-family: 'Conv_Centrale Sans Extra Light';
 	 	 	 	font-size: 13px;
 	 	 	 	text-align: justify;
 
@@ -157,6 +157,14 @@
 	 }
 }
 
+.resp_table {
+	display:none;
+
+
+	 tr {
+	 	border-bottom: 2px solid #000;
+	 }
+}
 
 /*Responsive*/
 
@@ -377,11 +385,52 @@
 	display: none;
 }
 
+.main_table {
+	display:none;
+}
+.resp_table {
+	display:block;
+}
+
+.line1, .line2, .line3 {
+
+	display: none;
+
+}
+.investors_table table {
+    transform: unset; 
+}
+
+.investors_container {
+	width: 100%;
+	height: 100%;
+}
+
+.investors_table {
+	width: 100%;
+	transform: unset;
+	left: 0;
+	    top: 120px;
+}
+.investors_table table tr td:last-child {
+     border-left: unset; 
+}
+.investors_table table tr td:first-child {
+    border-right:unset;
+}
+
+.investors_table table td {
+    width: unset;
+    height: unset;
+}
+
+.investors_table table span {
+    transform: unset;
+}
+
 #investors_down_fluid {
    
     background-image: url(../images/mobile_inv_bg.jpg);
-  
-
 }
 
 .investors_text_shape {
@@ -410,7 +459,56 @@
      width: unset; 
 }
 
+.resp_table tr {
+    border-bottom: 2px solid #000;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
 
 
 }
 
+.resp_table {
+
+	 tbody {
+	 	width: 100%;
+	 	   display: flex;
+   		 flex-direction: column;
+    	align-items: baseline;
+
+    	 tr:nth-child(2n){
+
+    	 		align-self: flex-end;
+    	 }
+
+    	 td {
+    	 	padding:0 20px;
+
+
+    	 	  a {
+    	 	  	display: block;
+    	 	  	text-transform: uppercase;
+    	 	  }
+    	 }
+	 }
+}
+
+}
+
+
+
+@media only screen and (max-width: 568px) {
+
+
+	.resp_table tr {
+	    width: 85%;
+	}
+	.investors_table table span {
+    font-size: 11px;
+}
+
+.resp_table tbody td {
+    padding: 0 15px;
+}
+
+
+}

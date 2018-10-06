@@ -418,9 +418,6 @@
     height: 40px;
   
 }
-.team_container .team_slide .owl-nav {
-    width: 106%;
-}
 
 .team_img {
 
@@ -478,6 +475,13 @@
 @media only screen and (max-width: 1120px){
 .team_container {
     max-width: 920px;
+}
+.team_container .team_slide .owl-nav .owl-prev, .team_container .team_slide .owl-nav .owl-next {
+    width: 33px;
+    height: 34px;
+}
+.team_container .team_slide .owl-nav {
+    width: 107%;
 }
 
 }

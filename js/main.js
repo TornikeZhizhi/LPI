@@ -81,11 +81,10 @@ var desay = 0;
 	$(".home_navbar .disclaimer").on("click",function(e){
 		e.preventDefault()
 
-		$(this).toggleClass("active")
-		$(".home_navbar_info").toggleClass("active");	
-		$(".vert_tittle").toggleClass("active");
-
-		$(".navbar_pages").toggleClass("deactive");
+		$(this).addClass("active")
+		$(".home_navbar_info").addClass("active");	
+		$(".vert_tittle").addClass("active");
+		$(".navbar_pages").addClass("deactive");
 
 		setTimeout(function(){
 			desay = 1;
@@ -101,18 +100,19 @@ var desay = 0;
 		desay = 1;
 	})
 
-		$("html").on("click",function(event){
+	$("html").on("click",function(event){
 			
 			if ( desay == 1 ) {
-				$(".disclaimer").removeClass("active")
-				$(".home_navbar_info").removeClass("active");	
-				$(".vert_tittle").removeClass("active");
-				$(".navbar_pages").removeClass("deactive");
-				$(".home_navbar").removeClass("active");
- 			
- 				desay = 0;
+				setTimeout(function(){
+					$(".disclaimer").removeClass("active")
+					$(".home_navbar_info").removeClass("active");	
+					$(".vert_tittle").removeClass("active");
+					$(".navbar_pages").removeClass("deactive");
+					$(".home_navbar").removeClass("active");
+	 				desay = 0;
+				},10)
 			}
-		})
+	})
 		
 
 
@@ -239,21 +239,28 @@ $(".bullet").eq(0).addClass("active");
 
 // investor table 
 
-$(".investors_container table a").each(function(index){
+$(".main_table a").each(function(index){
 
 	$(this).click(function(h){
-		// h.preventDefault()
-
 		$(".investros_content_box").css("display","none");
 		$(".investros_content_box").eq(index).css("display","blocks");
-
 	})
-
-
-
 
 })
 
+$(".resp_table a").each(function(index){
+
+	$(this).click(function(h){
+		
+		$(".investros_content_box").css("display","none");
+		$(".investros_content_box").eq(index).css("display","blocks");
+	})
+
+})
+
+
+
+// investor table 
 $(document).ready(function() {
 	  var _gaq = _gaq || [];
 	  _gaq.push(['_setAccount', 'UA-36251023-1']);
