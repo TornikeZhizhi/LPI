@@ -195,7 +195,8 @@ a:hover {
     display: flex;
     align-items: center;
     margin-left: 15%;
-    position: relative; }
+    position: relative;
+    z-index: 20; }
     .home_main_container .home_navbar.active {
       display: none; }
     .home_main_container .home_navbar ul li {

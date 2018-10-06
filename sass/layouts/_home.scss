@@ -226,6 +226,7 @@
       		 align-items: center;
       		  margin-left: 15%;
       		      position: relative;
+      		          z-index: 20;
       		  &.active {
       		  	display:none;
       		  }
