@@ -397,10 +397,8 @@
 }
 
 .contact_fa_icons {
-
-    bottom: -9%;
+    bottom: -5%;
 }
-
 
 
 }
@@ -420,5 +418,20 @@
     height: 75px;
 }
 
+
+}
+
+@media only screen and (max-width: 576px) and (max-height: 580px){
+
+	.contact_map iframe {
+    	height: 90px !important;
+	}
+	.contact_main_container .contact_wrapper .contact_form form input {
+    padding: 3px 10px;
+}
+.contact_main_container .contact_wrapper .contact_form form textarea {
+    padding: 3px 10px;
+    height: 50px;
+}
 
 }
