@@ -612,8 +612,12 @@ a:hover {
     z-index: 10; }
 
   .main_logo {
-    padding: 30px 30px;
+    padding: 20px 30px;
     text-align: left; }
+
+  .responsive_navigation {
+    top: 20px;
+    right: 35px; }
 
   .home_main_container .home_navbar_content .home_navbar_info.active {
     z-index: 20;
@@ -1255,7 +1259,10 @@ a:hover {
 
   .contact_main_container .contact_wrapper .contact_form form textarea {
     padding: 3px 10px;
-    height: 50px; } }
+    height: 50px; }
+
+  .contact_fa_icons {
+    bottom: -7%; } }
 #news_fluid {
   width: 100%;
   height: 100vh;
