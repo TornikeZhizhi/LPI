@@ -1220,7 +1220,7 @@ a:hover {
 
   .contact_fa_icons {
     bottom: -9%; } }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 576px) {
   .contact_main_container {
     height: calc(100% - 195px); }
 
