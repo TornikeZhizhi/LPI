@@ -1460,14 +1460,12 @@ a:hover {
     max-width: 42%; }
 
   .news_inside_container .news_in_wrapper {
-    padding: 35px 110px 30px 60px; }
+    padding: 35px 110px 30px 60px;
+    margin-top: 1.7vw; }
 
   .news_inside_container .news_in_wrapper .news_in_text {
     max-height: 265px;
     margin-top: 25px; }
-
-  .news_inside_container .news_in_wrapper {
-    margin-top: 1.7vw; }
 
   .news_inside_container .news_in_wrapper .news_in_text {
     max-height: 190px; } }
@@ -1489,7 +1487,8 @@ a:hover {
     margin-top: 30px; }
 
   .news_inside_container .news_in_wrapper {
-    padding: 25px 30px 45px 30px; }
+    padding: 25px 30px 45px 30px;
+    margin-top: 20px; }
 
   .news_inside_container .news_in_wrapper .news_in_wrapper_back {
     top: unset;
@@ -1497,9 +1496,6 @@ a:hover {
     right: 5%; }
     .news_inside_container .news_in_wrapper .news_in_wrapper_back img {
       width: 35px; }
-
-  .news_inside_container .news_in_wrapper {
-    margin-top: 20px; }
 
   .news_inside_container {
     width: 85%; } }
@@ -2263,7 +2259,8 @@ a:hover {
     margin-top: 5%; }
 
   .practice_area_contaiener .practice_area_list_box ul li {
-    font-size: 11px; }
+    font-size: 11px;
+    margin-bottom: 17px; }
 
   .practice_area_contaiener .practice_area_content_box .text_shape {
     shape-outside: polygon(-38px 282px, 137px 542px, 2px -48px); } }
