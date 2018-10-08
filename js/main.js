@@ -65,6 +65,9 @@ $(document).ready(function(){
 	$(".news_tittle").click(function(){
 		window.location.href = "index.html";
 	})
+	$(".practice_list_tittle").click(function(){
+		window.location.href = "index.html";
+	})
 
 	$(".about_tittle h2").click(function(){
 		window.location.href = "index.html";
@@ -102,9 +105,7 @@ var desay = 0;
 
 
 	$(".home_navbar_info").click(function(e){
-
 		e.stopPropagation()
-
 	})
 
 	$("html").on("click",function(event){

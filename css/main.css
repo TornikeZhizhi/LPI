@@ -2204,7 +2204,8 @@ a:hover {
     position: relative;
     z-index: 2000; }
     .practice_area_contaiener .practice_area_list_box .practice_list_tittle {
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      cursor: pointer; }
       .practice_area_contaiener .practice_area_list_box .practice_list_tittle h3 {
         color: #000;
         font-size: 18px;
