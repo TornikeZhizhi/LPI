@@ -229,5 +229,22 @@
     background-position: left;
    
 }
+.about_container .about_info_box {
+    margin-top: 10px;
+}
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 576px) and (max-height: 500px) {
+
+	.about_container {
+	    width: 100%;
+	    margin: 0px 5% 17%;
+	}
 
 }

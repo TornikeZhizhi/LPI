@@ -93,11 +93,18 @@ var desay = 0;
 	})
 
 
-	$(".home_navbar_info").mouseenter(function(){
-		desay = 0;
-	})
-	$(".home_navbar_info").mouseleave(function(){
-		desay = 1;
+	// $(".home_navbar_info").mouseenter(function(){
+	// 	desay = 0;
+	// })
+	// $(".home_navbar_info").mouseleave(function(){
+	// 	desay = 1;
+	// })
+
+
+	$(".home_navbar_info").click(function(e){
+
+		e.stopPropagation()
+
 	})
 
 	$("html").on("click",function(event){

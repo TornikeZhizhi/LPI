@@ -439,3 +439,14 @@
 }
 
 }
+
+
+@media only screen and (max-width: 576px) and (max-height: 510px){
+
+	
+	.contact_main_container {
+    height: calc(100% - 140px);
+}
+
+}
+
