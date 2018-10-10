@@ -106,9 +106,9 @@ a:hover {
         cursor: pointer; }
         .header_fluid .navigation ul li:hover .dropdown_nav {
           display: block !important; }
-      .header_fluid .navigation ul li:first-child a {
+      .header_fluid .navigation ul li:not(:last-child) a {
         position: relative; }
-        .header_fluid .navigation ul li:first-child a:after {
+        .header_fluid .navigation ul li:not(:last-child) a:after {
           position: absolute;
           content: "";
           top: 3px;

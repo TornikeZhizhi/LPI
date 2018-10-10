@@ -74,7 +74,7 @@
  									}
 						    }
 
-						    li:first-child a{
+						    li:not(:last-child) a{
 
 						    	position:relative;
 
