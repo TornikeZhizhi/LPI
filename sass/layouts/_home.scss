@@ -511,7 +511,7 @@
 			    	position: absolute;
 			    	top: 50%;
 			    	transform: translateY(-50%);
-			    	transition: .6s;
+			    	transition: .1s;
 
 			    		&.active {
 
@@ -847,12 +847,13 @@
 }
 
 .resp_wrapperr {
-	    background-color: #000;
+	background-color: #1e1f2bf0;
+    border-radius: 3px;
     position: fixed;
-      top: 11px;
-    right: 4px;;
-    width: 102px;
-    height: 45px;
+    top: 11px;
+    right: 0px;
+    width: 85px;
+    height: 44px;
     z-index: 2000;
 }
 
