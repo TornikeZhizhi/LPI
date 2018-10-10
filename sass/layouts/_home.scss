@@ -552,7 +552,7 @@
    		 	 height: 100%;
    		 	 transition: .4s;
    		 	 overflow: hidden;
-   		 	 z-index: 5000;
+   		 	 z-index: 100;
    		 	 display: flex;
 		        align-items: flex-start;
 		    justify-content: center;
@@ -853,6 +853,7 @@
     right: 4px;;
     width: 102px;
     height: 45px;
+    z-index: 2000;
 }
 
 	.main_logo {
