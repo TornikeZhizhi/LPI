@@ -78,7 +78,7 @@
 
 						    	position:relative;
 
-
+/*
 						    			&:after {
 											    position: absolute;
 											    content: "";
@@ -89,7 +89,7 @@
 											    background-image: url(../images/navigation_arrow11.png);
 											    background-repeat: no-repeat;
 
-											    			}
+											    			}*/
 						    	
 						    }
 
@@ -552,7 +552,7 @@
    		 	 height: 100%;
    		 	 transition: .4s;
    		 	 overflow: hidden;
-   		 	 z-index: 100;
+   		 	 z-index: 200;
    		 	 display: flex;
 		        align-items: flex-start;
 		    justify-content: center;
@@ -822,9 +822,9 @@
 	#main_fluid {
 
 	 
-	 background-image: url("../images/home_bg_test5-01.jpg");
+	 background-image: url("../images/resp_home_bg.jpg");
 
-	 	&:after{
+	 /*	&:after{
 	 	content: "";
 	    position: absolute;
 	    width: 40%;
@@ -838,7 +838,7 @@
 	    -webkit-filter: grayscale(100%);
 	    filter: grayscale(100%);
 	    background-size: 115% 100%;
-	 	}
+	 	}*/
 	 	
 }
 

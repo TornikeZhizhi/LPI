@@ -403,10 +403,7 @@
 .news_scroll_box {
 	display: none;
 }
-.news_scroll_box_resp {
-	display: flex;
-	left: 93%;
-}
+
 	
 
 .news_container .news_row {
@@ -446,7 +443,7 @@
  
 }
 .news_container {
-    width: 80%;
+    width: 90%;
     height: 100%;
     display: flex;
     flex-direction: column;

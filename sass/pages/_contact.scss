@@ -147,7 +147,7 @@
     display: flex;
     border-bottom: 2px solid red;
     padding: 0px 7px 10px 120px;
-    z-index: 300;
+    z-index: 100;
 
     a {
     	border-radius: 50%;
@@ -342,6 +342,8 @@
 	 	height: 250px;
 	 }
 }
+
+
 .contact_main_container .contact_wrapper .contact_form form textarea {
     
     height: 140px;
